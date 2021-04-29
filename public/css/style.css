@@ -133,3 +133,6 @@ a.nav-link:hover{
     color: white;
     border-radius: 5px;
 }
+
+.non-accessible{
+    display : none;  //register form
