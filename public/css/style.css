@@ -114,12 +114,12 @@ a.nav-link :hover{
 #myTabContent{
     margin-top: 20px;
 }
-.card{
+.effects{
     width: 100%;
     height: 100%;
     transition: width 0.5s , height 0.5s;
 }
-.card:hover{
+.effects:hover{
     width: 103%;
     height: 102%;
     background: rgba(0,0,0,0.8);
