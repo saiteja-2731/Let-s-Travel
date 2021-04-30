@@ -18,9 +18,8 @@
     display: flex;
     justify-content: flex-end;
 }
-.btn-edit{
-    margin-top: 15px;
-    height: 40px;
+.create-post-btn{
+    margin-bottom:15px;
 }
 
 .page-wrapper{
@@ -40,11 +39,6 @@
 }
 .mt20{
     margin-top: 15px;
-}
-.row-wise{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .w30{
     width: 30%;
