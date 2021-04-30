@@ -23,7 +23,7 @@ async function addPosts(){
     let i =1;
     posts.forEach((post)=> {
         let postHTML = `
-        <article class="row-wise article-in-line">
+        <article class="d-flex justify-content-between article-in-line align-items-center">
             <div class="num w5">${i++}</div>
             <input class="id" type="hidden" value="${post.id}">
             <div class="name w30">${post.title}</div>
