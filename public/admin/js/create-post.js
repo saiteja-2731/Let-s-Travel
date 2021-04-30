@@ -8,7 +8,7 @@ createForm.addEventListener('submit', function(e) {
     e.preventDefault();
     let text = createText.value;
 
-    fetch('http://localhost:3000/posts', {
+    fetch('/posts', {
         method: 'POST',
         headers:{
             'Content-Type':'application/json'

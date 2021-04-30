@@ -5,7 +5,7 @@ signInForm.addEventListener('submit',function(e){
     e.preventDefault();
     let email = document.getElementById('sign-in-email').value;
     let password = document.getElementById('sign-in-password').value;
-     fetch('http://localhost:3000/users/login',{
+     fetch('/users/login',{
         method:'POST',
         headers:{
             'Content-Type':'application/json'
@@ -30,7 +30,7 @@ registerForm.addEventListener('submit',function(e){
         alert('Passwords doesnot match');
         return;
     }
-    fetch('http://localhost:3000/users/register',{
+    fetch('/users/register',{
          method:'POST',
          headers:{
              'Content-Type':'application/json'
