@@ -12,7 +12,7 @@ let Post = require('./models/posts').Post;
 
 app.set('view engine','ejs');
 
-mongoose.connect('mongodb://localhost/travel',{useNewUrlParser:true } );
+mongoose.connect('mongodb+srv://Saiteja:sAITEJA123@mycluster.jnqqb.mongodb.net/travels',{useNewUrlParser:true } );
 app.use(express.json());
 
 
