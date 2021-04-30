@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded',async function(){
     articles.innerHTML='';
     posts.forEach((post)=> {
         let postHTML = `
-        <div class="col-4 mt20">
+        <div class="col-lg-4 col-md-6  col-sm-6 col-xs-6 mt20">
             <div class="card effects">
-                <img src="${post.imageURL}" alt="${post.title}" class="card-img">
+                <img src="${post.imageURL}" alt="${post.title}" class="card-img img-responsive">
                 <div class="card-body">
                     <h4>${post.title}</h4>
                     <p class="card-text">${post.description}</p>
