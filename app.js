@@ -53,6 +53,7 @@ app.get('/login',(req,resp)=>{
     resp.render('login');
 })
 
-app.listen(3000,()=>{
-    console.log('listening 3000....')
+let port = process.env.PORT || 3000; //if herokus port fails then we can open page using 3000
+app.listen(port,()=>{
+    console.log(`listening ${port}....`);
 })
