@@ -1,6 +1,6 @@
 let express = require('express');
 let app = express();
-let mongoose = require('mongoose');
+let mongoose = require('mongoose'); // connecting mongoose
 let postsRouter = require('./routes/posts');
 let cookieParser = require('cookie-parser');
 let callbackRequestsRouter = require('./routes/callback-requests');
@@ -16,7 +16,7 @@ mongoose.connect('mongodb+srv://Saiteja:sAITEJA123@mycluster.jnqqb.mongodb.net/t
 app.use(express.json());
 
 
-app.use(express.static('public'));
+app.use(express.static('public'));   // To display static content when website is opened
 
 app.use(cookieParser());
 app.use('/posts',postsRouter);
