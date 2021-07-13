@@ -19,7 +19,11 @@
     justify-content: flex-end;
 }
 .create-post-btn{
+<<<<<<< HEAD
     margin-bottom: 15px;
+=======
+    margin-bottom:15px;
+>>>>>>> 25847372095c218381a4b2473603c03c5081ad6e
 }
 
 .page-wrapper{
@@ -39,11 +43,6 @@
 }
 .mt20{
     margin-top: 15px;
-}
-.row-wise{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .w30{
     width: 30%;
@@ -121,6 +120,11 @@ a.nav-link :hover{
     height: 100%;
 }
 .effects:hover{
+<<<<<<< HEAD
+=======
+    width: 103%;
+    height: 102%;
+>>>>>>> 25847372095c218381a4b2473603c03c5081ad6e
     background: rgba(0,0,0,0.8);
     color: white;
 }
@@ -132,6 +136,7 @@ a.nav-link:hover{
     color: white;
     border-radius: 5px;
 }
+<<<<<<< HEAD
 .non-accessible{
     display: none;
 }
@@ -143,3 +148,8 @@ a.nav-link:hover{
     box-shadow: 0 0 10px rgb(0,0,0);
 }
 
+=======
+
+.non-accessible{
+    display : none;  //register form
+>>>>>>> 25847372095c218381a4b2473603c03c5081ad6e
