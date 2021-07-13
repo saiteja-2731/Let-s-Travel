@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded',async function(){
     articles.innerHTML='';
     posts.forEach((post)=> {
         let postHTML = `
-        <div class="col-4 mt20">
+        <div class="col-lg-4 col-xs-12 col-sm-12 col-md-6  mt20">
             <div class="card effects">
                 <img src="${post.imageURL}" alt="${post.title}" class="card-img">
                 <div class="card-body">
