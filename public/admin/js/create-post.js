@@ -1,8 +1,10 @@
+// selecting the corresponding ids from admin.ejs
 let createForm = document.querySelector('.create-post-form');
 let createTitle = document.querySelector('#create-title');
 let createCountry = document.querySelector('#create-country');
 let createImageURL = document.querySelector('#create-image-url');
-let createText = document.querySelector('#create-text');
+let createCost = document.querySelector('#create-cost');
+let createText = document.querySelector('#create-text');  
 
 createForm.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -17,8 +19,9 @@ createForm.addEventListener('submit', function(e) {
             title : createTitle.value,
             country: createCountry.value,
             imageURL : createImageURL.value,
+            cost:createCost.value,
             text:text,
-            description: text.substring(0,100)+'.... '
+            description: text.substring(0,100)+'.... '  // To take first 100 letters of the text string and adding it to description
         })
-    }).then((response) => response.text()).then((data) => window.history.go());
+    }).then((response) => response.text()).then((data) => window.history.go()); // window.history.go() automatically reloads and adds newly added data to admin page
 })

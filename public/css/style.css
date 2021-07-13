@@ -94,8 +94,11 @@ a.nav-link :hover{
     text-align: center;
 }
 .sight-container img{
-    width: 100%;
-    height: 75%;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+  
 }
 .sight-container .date{
     font-weight: bold;
@@ -139,3 +142,4 @@ a.nav-link:hover{
 .my-image{
     box-shadow: 0 0 10px rgb(0,0,0);
 }
+

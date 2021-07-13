@@ -3,17 +3,18 @@ let app = express();
 let mongoose = require('mongoose'); // connecting mongoose
 let postsRouter = require('./routes/posts');
 let cookieParser = require('cookie-parser');
-let callbackRequestsRouter = require('./routes/callback-requests');
+let callbackRequestsRouter = require('./routes/callback-requests'); // connecting route for call back request
 let emailsRouter = require('./routes/emails');
 let usersRouter = require('./routes/users');
 let auth= require('./controllers/auth');
 
-let Post = require('./models/posts').Post;
+let Post = require('./models/posts').Post;  // connected schema for posts to app.js and assigned it to Post object
 
 app.set('view engine','ejs');
 
-mongoose.connect('mongodb+srv://Saiteja:sAITEJA123@mycluster.jnqqb.mongodb.net/travels',{useNewUrlParser:true } );
-app.use(express.json());
+mongoose.connect('mongodb+srv://Saiteja:sAITEJA123@mycluster.jnqqb.mongodb.net/travels',{useNewUrlParser:true } ); //connecting to database
+
+app.use(express.json());  // Converting data to json format
 
 
 app.use(express.static('public'));   // To display static content when website is opened
@@ -32,11 +33,10 @@ app.get('/sight', async (req,resp)=>{
         title : post.title,
         imageURL : post.imageURL,
         date: post.date,
+        cost:post.cost,
         text: post.text
     })
 })
-
-
 
 
 app.get('/admin',  (req,resp)=>{

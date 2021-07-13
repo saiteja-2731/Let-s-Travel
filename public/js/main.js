@@ -1,3 +1,6 @@
+// File for Main Page of website
+// The articles are displayed in following format
+
 let callMeForm = document.querySelector('.call-me-form');
 
 document.addEventListener('DOMContentLoaded',async function(){
@@ -6,9 +9,9 @@ document.addEventListener('DOMContentLoaded',async function(){
     articles.innerHTML='';
     posts.forEach((post)=> {
         let postHTML = `
-        <div class="col-lg-4 col-md-6  col-sm-6 col-xs-6 mt20">
+        <div class="col-4 mt20">
             <div class="card effects">
-                <img src="${post.imageURL}" alt="${post.title}" class="card-img img-responsive">
+                <img src="${post.imageURL}" alt="${post.title}" class="card-img">
                 <div class="card-body">
                     <h4>${post.title}</h4>
                     <p class="card-text">${post.description}</p>
@@ -20,6 +23,8 @@ document.addEventListener('DOMContentLoaded',async function(){
     })
 });
 
+
+// For the call back requests
 callMeForm.addEventListener('submit',function(e) {
     e.preventDefault();
     let phoneInp = callMeForm.querySelector('input');

@@ -1,7 +1,11 @@
+// selecting the corresponding ids from admin.ejs
+
 {
     let articlesBlock = document.querySelector('.articles');
     let updateForm = document.querySelector('.update-post-form');
     let titleInp = document.querySelector('#update-title');
+    let updateCountry = document.querySelector('#update-country');
+    let updateCost = document.querySelector('#update-cost');
     let textArea = document.querySelector('#update-text');
     let id;
 
@@ -13,7 +17,8 @@
                         .then((data)=>data)
             
             titleInp.value = postInfo.title;
-            
+            updateCountry.value = postInfo.country;
+            updateCost.value = postInfo.cost;
             textArea.value = postInfo.text;
 
             let articlesTab = document.getElementById('v-pills-articles');
@@ -34,6 +39,8 @@
             body: JSON.stringify({
                 title : titleInp.value,
                 text : textArea.value,
+                cost: updateCost.value,
+                country : updateCountry.value,
                 description: textArea.value.substring(0,100)+'...'
             })
         }).then((resp)=>resp.text())
