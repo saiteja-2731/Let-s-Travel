@@ -4,6 +4,7 @@ let router = express.Router();
 let bcrypt = require('bcrypt');
 let auth = require('../controllers/auth');
 
+
 router.post('/login', async (req,resp)=>{
     let email = req.body.email;
     let password = req.body.password;
